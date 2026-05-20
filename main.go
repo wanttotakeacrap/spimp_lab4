@@ -340,11 +340,12 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	game := NewGame("B3/S23")
-	//Game
+
 	ebiten.SetWindowSize(screenWidth, screenHeight)
 	ebiten.SetWindowTitle("Game of Life")
 
 	if err := ebiten.RunGame(game); err != nil {
 		log.Fatal(err)
 	}
+
 }
